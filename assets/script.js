@@ -48,8 +48,6 @@ arrowRight.addEventListener("click", () => {
 	
 	caroussel()
 	
-	
-
 })
 
 // placement des dots 
@@ -65,7 +63,6 @@ arrowRight.addEventListener("click", () => {
 		//liaison parent/enfant
 		dots.appendChild(dotDiv)	 
 	}
-
 	
 
 // fonction pour afficher text et image 
@@ -78,7 +75,6 @@ let carousselImage = document.querySelector(".banner-img")
  //changement de l'attribut src en fonction de i 
 carousselImage.setAttribute("src","./assets/images/slideshow/"+slides[i].image)
 
-
 let carousselText = document.querySelector("#banner p")
 carousselText.innerHTML=slides[i].tagLine
 
@@ -86,7 +82,6 @@ let dots = document.querySelectorAll(".dot")
 console.log(dots)
 
 dots.forEach(dot=>dot.classList.remove("dot_selected"))
-
 dots[i].classList.add("dot_selected")
 
 }
