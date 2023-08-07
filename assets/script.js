@@ -83,7 +83,7 @@ let carousselText = document.querySelector("#banner p")
 carousselText.innerHTML=slides[i].tagLine
 
 let dots = document.querySelectorAll(".dot")
-
+console.log(dots)
 
 dots.forEach(dot=>dot.classList.remove("dot_selected"))
 
